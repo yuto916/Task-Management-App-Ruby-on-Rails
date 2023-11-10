@@ -1,0 +1,10 @@
+<h1>Editing task</h1>
+<div>
+  <%= link_to "<- Back to Task List", tasks_path, class:"link-grey" %>
+</div>
+<br />
+<%= render "form", task: @task %>
+<br />
+<div>
+  <%= link_to "Show this task", @task, class:"btn btn-secondary"%>
+</div>

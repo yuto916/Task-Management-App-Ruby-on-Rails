@@ -1,0 +1,83 @@
+/* app/assets/stylesheets/application.css */
+
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 0px;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .button {
+    margin-top:10px;
+  }
+
+  table {
+    border: 1px solid black;
+    padding: 0px 20px 0px;
+    width: 300px;
+  }
+
+  .link-white {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .link-grey {
+    color:rgb(0, 0, 0);
+  }
+
+  a:hover {
+    color:rgb(0, 0, 0)
+  }
+
+
+  /* ************ CSS for navbar ************ */
+  .navbar {
+    width: 100%;
+    height: 85px;
+    background-color: rgb(73, 74, 88);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .links a {
+    color: rgb(244, 244, 244);
+    text-decoration: none;
+    margin: 15px;
+  }
+
+  .links a:hover {
+    color: rgb(194, 197, 207);
+  }
+
+  .links a:active {
+    background-color: rgb(225, 224, 232, 20%);
+    border-radius: 10%;
+  }
+  /* **************************************** */
+
+  .edit-links {
+    display: flex;
+  }
+
+  .form {
+    max-width:"500px";
+  }
+
+  .show-container {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 500px;
+  }
+  /* Add more styles as needed *
+

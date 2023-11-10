@@ -1,0 +1,29 @@
+<p style="color: green"><%= notice %></p>
+<h1>Task List</h1>
+<div id="tasks">
+  <table class="table table-striped">
+    <thead>
+      <tr class="table-dark" style="font-weight: bold">
+        <td width="25%">Name</td>
+        <td width="60%">Description</td>
+        <td width="15%">Show / Edit / Delete</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% @tasks.each do |task| %>
+        <tr>
+          <%= render task %>
+          <td>
+            <div class="edit-links">
+              <%= link_to "Show", task %> &nbsp;&nbsp;&nbsp;&nbsp; 
+              <%= link_to 'Edit', edit_task_path(task) %> &nbsp;&nbsp;&nbsp;&nbsp; 
+              <%= button_to 'Delete', task, method: :delete%>
+            </div>
+          </td>
+        </tr>
+        <br />
+      <% end %>
+    </tbody>
+  </table>
+  <%= link_to "Create New Task", new_task_path %>
+</div>
