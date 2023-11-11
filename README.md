@@ -21,11 +21,11 @@ A user can create, retrieve, update, and delete tasks.
 
 
 ## Features Implemented
-# Enhanced UI/UX
+### Enhanced UI/UX
 - Added navbar with links to each pages.
 - Reorganized task list page to make it more visually appealing.
 - Added bootstrap classes to the forms generated automatically.
 
-# Authentication
+### Authentication
 - Used Devise gem to create user model, view, and controller and CRUD for each user.
 - User can sign up or sign in, and after successully authenticated, they have access to task pages and pages to edit their profile.
